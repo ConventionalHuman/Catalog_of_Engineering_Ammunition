@@ -23,61 +23,61 @@ class Activity3D : AppCompatActivity() {
             val Title3D = arguments!!["model3d"].toString()
             //directory and model each as param
 
-            if(Title3D == "МОН-50" || Title3D == "MON-50"){
+            if(Title3D == "МОН-50"){
                 loadGlb(this@Activity3D, "landmine", "mon50")
             }
-            else if(Title3D == "МОН-90" || Title3D == "MON-90"){
+            else if(Title3D == "МОН-90"){
                 loadGlb(this@Activity3D, "landmine", "mon90")
             }
-            else if(Title3D == "ТМ-57" || Title3D == "TM-57"){
+            else if(Title3D == "ТМ-57"){
                 loadGlb(this@Activity3D, "landmine", "tm57")
             }
-            else if(Title3D == "ТМ-62Д" || Title3D == "TM-62D"){
+            else if(Title3D == "ТМ-62Д"){
                 loadGlb(this@Activity3D, "landmine", "tm62d")
             }
-            else if(Title3D == "ТМ-62М" || Title3D == "TM-62M"){
+            else if(Title3D == "ТМ-62М"){
                 loadGlb(this@Activity3D, "landmine", "tm-62-m")
             }
-            else if(Title3D == "ТМ-72" || Title3D == "TM-72"){
+            else if(Title3D == "ТМ-72"){
                 loadGlb(this@Activity3D, "landmine", "tm-72")
             }
-            else if(Title3D == "ТМ-62П2" || Title3D == "TM-62P2"){
+            else if(Title3D == "ТМ-62П2"){
                 loadGlb(this@Activity3D, "landmine", "tm-62-p2")
             }
-            else if(Title3D == "ТМ-62П3" || Title3D == "TM-62P3"){
+            else if(Title3D == "ТМ-62П3"){
                 loadGlb(this@Activity3D, "landmine", "tm-62p3")
             }
-            else if(Title3D == "ТМ-62Т" || Title3D == "TM-62T"){
+            else if(Title3D == "ТМ-62Т"){
                 loadGlb(this@Activity3D, "landmine", "tm-62t")
             }
-            else if(Title3D == "ОЗМ-72" || Title3D == "OZM-72"){
+            else if(Title3D == "ОЗМ-72"){
                 loadGlb(this@Activity3D, "landmine", "ozm72")
             }
-            else if(Title3D == "ПТКМ-1Р" || Title3D == "PTKM-1R"){
+            else if(Title3D == "ПТКМ-1Р"){
                 loadGlb(this@Activity3D, "landmine", "ptkm-1r")
             }
-            else if(Title3D == "ОЗ-1" || Title3D == "OZ-1"){
+            else if(Title3D == "ОЗ-1"){
                 loadGlb(this@Activity3D, "landmine", "oz1")
             }
-            else if(Title3D == "ПФМ-1С" || Title3D == "PFM-1S"){
+            else if(Title3D == "ПФМ-1С"){
                 loadGlb(this@Activity3D, "landmine", "pfm1s")
             }
-            else if(Title3D == "ПМН-2" || Title3D == "PMN-2"){
+            else if(Title3D == "ПМН-2"){
                 loadGlb(this@Activity3D, "landmine", "pmn2")
             }
-            else if(Title3D == "ПМН" || Title3D == "PMN"){
+            else if(Title3D == "ПМН"){
                 loadGlb(this@Activity3D, "landmine", "pmn")
             }
-            else if(Title3D == "ПОМ3-2М" || Title3D == "POM3-2M"){
+            else if(Title3D == "ПОМ3-2М"){
                 loadGlb(this@Activity3D, "landmine", "pom3-2m")
             }
-            else if(Title3D == "ТМ-89" || Title3D == "TM-89"){
+            else if(Title3D == "ТМ-89"){
                 loadGlb(this@Activity3D, "landmine", "tm89")
             }
-            else if(Title3D == "ЗРП-2" || Title3D == "ZRP-2"){
+            else if(Title3D == "ЗРП-2"){
                 loadGlb(this@Activity3D, "landmine", "zrp2")
             }
-            else if(Title3D == "БПМ" || Title3D == "BPM"){
+            else if(Title3D == "БПМ"){
                 loadGlb(this@Activity3D, "landmine", "bpm")
             }
             else{
