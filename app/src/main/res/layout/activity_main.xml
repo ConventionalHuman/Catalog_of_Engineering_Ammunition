@@ -49,6 +49,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Поиск"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +63,7 @@
         android:id="@+id/search_button"
         android:layout_width="84dp"
         android:layout_height="68dp"
-        android:backgroundTint="#708238"
+        android:backgroundTint="#e0d9bc"
         android:text='""'
         app:icon="@drawable/icon_search"
         app:iconSize="42dp"

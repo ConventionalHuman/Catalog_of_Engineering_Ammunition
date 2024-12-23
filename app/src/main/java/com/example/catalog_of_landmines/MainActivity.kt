@@ -115,16 +115,39 @@ class MainActivity : AppCompatActivity() {
         }
         button_search.setOnClickListener {
             val edit = findViewById<EditText>(R.id.editTextText)
-            var textSearch = edit.text.toString()
+            var textSearch = edit.text.toString().trim() // Удаление пробелов
+
+            // Если поле пустое после удаления пробелов, устанавливаем значение "Поиск"
+            if (textSearch.isEmpty()) {
+                edit.setText("Поиск")
+                return@setOnClickListener // Прерываем дальнейшую обработку, если поле пустое
+            }
+
             textSearch = textSearch.replace("\\s".toRegex(), "")
             for (i in models.indices) {
-                if(textSearch.uppercase() ==  models[i]){
+                if (textSearch.uppercase() == models[i]) {
                     val intentCatalog = Intent(this@MainActivity, MultyActivity::class.java)
                     intentCatalog.putExtra("title", models[i])
                     startActivity(intentCatalog)
                 }
             }
         }
+
+// Слушатель фокуса для EditText
+        findViewById<EditText>(R.id.editTextText).setOnFocusChangeListener { view, hasFocus ->
+            val edit = view as EditText
+            if (hasFocus) {
+                if (edit.text.toString() == "Поиск") {
+                    edit.text.clear() // Очистка текста, если значение "Поиск"
+                }
+            } else {
+                // Устанавливаем значение "Поиск", если поле осталось пустым
+                if (edit.text.toString().isBlank()) {
+                    edit.setText("Поиск")
+                }
+            }
+        }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
